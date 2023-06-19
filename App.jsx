@@ -5,19 +5,20 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Chat from "./components/Chat";
 import Login from "./components/Login";
+import styled from "styled-components";
+import Friend from "./components/Friend";
+import Option from "./components/Option";
 
 const Tab = createBottomTabNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Chat" component={Chat} options={{ title: "Chat" }} />
-        <Tab.Screen
-          name="Login"
-          component={Login}
-          options={{ title: "Login" }}
-        />
+      <Tab.Navigator screenOptions={{ headerShown: false }}>
+        <Tab.Screen name="Friend" component={Friend} />
+        <Tab.Screen name="Chat" component={Chat} />
+        <Tab.Screen name="Login" component={Login} />
+        <Tab.Screen name="Option" component={Option} />
       </Tab.Navigator>
     </NavigationContainer>
   );
