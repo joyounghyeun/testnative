@@ -1,18 +1,35 @@
-import React from "react";
-import { View, Text } from "react-native";
-import { styled } from "styled-components";
+// Main.js
 
-function Main() {
+import React from "react";
+import styled from "styled-components/native";
+import { useNavigation } from "@react-navigation/native";
+
+const Container = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
+const MainText = styled.Text`
+  font-size: 24px;
+  margin-bottom: 16px;
+`;
+
+const MainButton = styled.Button``;
+
+const Main = () => {
+  const navigation = useNavigation();
+
+  const handleButtonPress = () => {
+    navigation.navigate("Friend");
+  };
+
   return (
-    <Backto>
-      <Text>Main Page</Text>
-    </Backto>
+    <Container>
+      <MainText>Main Component</MainText>
+      <MainButton title="Go to Friend" onPress={handleButtonPress} />
+    </Container>
   );
-}
+};
 
 export default Main;
-
-const Backto = styled.View`
-  margin-top: 100px;
-  margin-left: 150px;
-`;
