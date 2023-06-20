@@ -33,7 +33,7 @@ function Chat() {
         <TimeText>{item.time}</TimeText>
         <MaterialCommunityIcons
           name={item.icon}
-          size={30}
+          size={25}
           color={item.iconColor}
         />
       </TimeView>
