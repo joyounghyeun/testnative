@@ -1,8 +1,23 @@
-// Main.js
-
 import React from "react";
 import styled from "styled-components/native";
 import { useNavigation } from "@react-navigation/native";
+
+const Main = () => {
+  const navigation = useNavigation();
+
+  const handleButtonPress = () => {
+    navigation.navigate("Chat");
+  };
+
+  return (
+    <Container>
+      <MainText>Main Component</MainText>
+      <MainButton title="Login" onPress={handleButtonPress} />
+    </Container>
+  );
+};
+
+export default Main;
 
 const Container = styled.View`
   flex: 1;
@@ -16,20 +31,3 @@ const MainText = styled.Text`
 `;
 
 const MainButton = styled.Button``;
-
-const Main = () => {
-  const navigation = useNavigation();
-
-  const handleButtonPress = () => {
-    navigation.navigate("Friend");
-  };
-
-  return (
-    <Container>
-      <MainText>Main Component</MainText>
-      <MainButton title="Go to Friend" onPress={handleButtonPress} />
-    </Container>
-  );
-};
-
-export default Main;

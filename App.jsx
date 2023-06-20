@@ -23,9 +23,8 @@ function App() {
           component={Main}
           options={{ tabBarStyle: { display: "none" } }}
         />
-        <Tab.Screen name="Friend" component={Friend} />
         <Tab.Screen name="Chat" component={Chat} />
-        <Tab.Screen name="Login" component={Login} />
+        <Tab.Screen name="Friend" component={Friend} />
         <Tab.Screen name="Option" component={Option} />
       </Tab.Navigator>
     </NavigationContainer>
