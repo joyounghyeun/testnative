@@ -23,7 +23,7 @@ const Main = () => {
     <Container>
       <MainText>Welcome to KakaoTalk</MainText>
       <SubText>
-        If you have a Kakao Account, {"\n"}log in with your email or phone
+        If you have a Kakao Account,{"\n"}log in with your email or phone
         number.
       </SubText>
 
