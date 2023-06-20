@@ -1,10 +1,11 @@
 import React from "react";
-import { View, Text, FlatList, Image } from "react-native";
+import { View, Text, FlatList, StyleSheet } from "react-native";
 import { styled } from "styled-components";
 import { FontAwesome } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import { Image } from "react-native";
 
 function Chat() {
   const chatData = [
@@ -15,17 +16,21 @@ function Chat() {
       time: "10:10",
       icon: "numeric-1-circle",
       iconColor: "red",
+      chatimage: require("../assets/images/Icon1.png"),
     },
   ];
 
   const renderChatItem = ({ item }) => (
     <ChatingView>
-      <View>
-        <KaKaoText>{item.name}</KaKaoText>
-        <SmallTalk>{item.message}</SmallTalk>
-      </View>
+      <ImageText>
+        <Image source={item.chatimage} style={styles.image} />
+        <View>
+          <KaKaoText>{item.name}</KaKaoText>
+          <SmallTalk>{item.message}</SmallTalk>
+        </View>
+      </ImageText>
       <TimeView>
-        <Text>{item.time}</Text>
+        <TimeText>{item.time}</TimeText>
         <MaterialCommunityIcons
           name={item.icon}
           size={30}
@@ -40,14 +45,14 @@ function Chat() {
       <HeaderView>
         <ChatText>Chats</ChatText>
         <SmallView>
-          <AntDesign name="search1" size={35} color="black" />
+          <AntDesign name="search1" size={30} color="black" />
           <MaterialCommunityIcons
             name="chat-plus-outline"
-            size={35}
+            size={30}
             color="black"
           />
-          <Ionicons name="musical-notes-outline" size={35} color="black" />
-          <Ionicons name="settings-outline" size={35} color="black" />
+          <Ionicons name="musical-notes-outline" size={30} color="black" />
+          <Ionicons name="settings-outline" size={30} color="black" />
         </SmallView>
       </HeaderView>
       <FlatList
@@ -95,6 +100,24 @@ const SmallTalk = styled.Text`
 `;
 
 const TimeView = styled.View`
-  margin-left: 30px;
+  margin-left: 40px;
+`;
+
+const TimeText = styled.Text`
   color: gray;
+`;
+
+const styles = StyleSheet.create({
+  image: {
+    width: 40,
+    height: 40,
+    marginRight: 10,
+    marginTop: 0,
+  },
+});
+
+const ImageText = styled.View`
+  flex-direction: row;
+  height: 50px;
+  margin-left: 10px;
 `;
