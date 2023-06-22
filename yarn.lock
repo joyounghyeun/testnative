@@ -1217,6 +1217,13 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     "to-fast-properties" "^2.0.0"
 
+"@egjs/hammerjs@^2.0.17":
+  "integrity" "sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A=="
+  "resolved" "https://registry.npmjs.org/@egjs/hammerjs/-/hammerjs-2.0.17.tgz"
+  "version" "2.0.17"
+  dependencies:
+    "@types/hammerjs" "^2.0.36"
+
 "@emotion/unitless@^0.8.0":
   "integrity" "sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ=="
   "resolved" "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.8.1.tgz"
@@ -1919,10 +1926,10 @@
     "react-is" "^16.13.0"
     "use-latest-callback" "^0.1.5"
 
-"@react-navigation/elements@^1.3.17":
-  "integrity" "sha512-sui8AzHm6TxeEvWT/NEXlz3egYvCUog4tlXA4Xlb2Vxvy3purVXDq/XsM56lJl344U5Aj/jDzkVanOTMWyk4UA=="
-  "resolved" "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.17.tgz"
-  "version" "1.3.17"
+"@react-navigation/elements@^1.3.17", "@react-navigation/elements@^1.3.18":
+  "integrity" "sha512-/0hwnJkrr415yP0Hf4PjUKgGyfshrvNUKFXN85Mrt1gY49hy9IwxZgrrxlh0THXkPeq8q4VWw44eHDfAcQf20Q=="
+  "resolved" "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.18.tgz"
+  "version" "1.3.18"
 
 "@react-navigation/native@^3.8.4":
   "integrity" "sha512-gXSVcL7bfFDyVkvyg1FiAqTCIgZub5K1X/TZqURBs2CPqDpfX1OsCtB9D33eTF14SpbfgHW866btqrrxoCACfg=="
@@ -1948,6 +1955,15 @@
   "version" "6.1.8"
   dependencies:
     "nanoid" "^3.1.23"
+
+"@react-navigation/stack@^6.3.17":
+  "integrity" "sha512-8/8ZvJROK3fp6PRmQ9MrXd9epBowA8NkfCaWW/N9H5arqwNX9lTXAkmcjicRhjpX+UNlMBR9dTLkWvPRe2vY9A=="
+  "resolved" "https://registry.npmjs.org/@react-navigation/stack/-/stack-6.3.17.tgz"
+  "version" "6.3.17"
+  dependencies:
+    "@react-navigation/elements" "^1.3.18"
+    "color" "^4.2.3"
+    "warn-once" "^0.1.0"
 
 "@segment/loosely-validate-event@^2.0.0":
   "integrity" "sha512-ZMCSfztDBqwotkl848ODgVcAmN4OItEWDCkshcKz0/W6gGSQayuuCtWV/MlodFivAZD793d6UgANd6wCXUfrIw=="
@@ -1992,6 +2008,11 @@
   "version" "10.1.0"
   dependencies:
     "@sinonjs/commons" "^3.0.0"
+
+"@types/hammerjs@^2.0.36":
+  "integrity" "sha512-ewXv/ceBaJprikMcxCmWU1FKyMAQ2X7a9Gtmzw8fcg2kIePI1crERDM818W+XYrxqdBBOdlf2rm137bU+BltCA=="
+  "resolved" "https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.41.tgz"
+  "version" "2.0.41"
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   "integrity" "sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g=="
@@ -3916,7 +3937,7 @@
   "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz"
   "version" "2.5.5"
 
-"hoist-non-react-statics@^3.3.2":
+"hoist-non-react-statics@^3.3.0", "hoist-non-react-statics@^3.3.2":
   "integrity" "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
   "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   "version" "3.3.2"
@@ -4603,7 +4624,7 @@
   "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
   "version" "4.1.1"
 
-"lodash@^4.17.13", "lodash@^4.17.4":
+"lodash@^4.17.13", "lodash@^4.17.21", "lodash@^4.17.4":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   "version" "4.17.21"
@@ -5816,7 +5837,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@*":
+"prop-types@*", "prop-types@^15.7.2":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -5969,6 +5990,17 @@
     "flow-parser" "^0.185.0"
     "jscodeshift" "^0.13.1"
     "nullthrows" "^1.1.1"
+
+"react-native-gesture-handler@>= 1.0.0":
+  "integrity" "sha512-rr+XwVzXAVpY8co25ukvyI38fKCxTQjz7WajeZktl8qUPdh1twnSExgpT47DqDi4n+m+OiJPAnHfZOkqqAQMOg=="
+  "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.12.0.tgz"
+  "version" "2.12.0"
+  dependencies:
+    "@egjs/hammerjs" "^2.0.17"
+    "hoist-non-react-statics" "^3.3.0"
+    "invariant" "^2.2.4"
+    "lodash" "^4.17.21"
+    "prop-types" "^15.7.2"
 
 "react-native-gradle-plugin@^0.71.18":
   "integrity" "sha512-1dVk9NwhoyKHCSxcrM6vY6cxmojeATsBobDicX0ZKr7DgUF2cBQRTKsimQFvzH8XhOVXyH8p4HyDSZNIFI8OlQ=="
