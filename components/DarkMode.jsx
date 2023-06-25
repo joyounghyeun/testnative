@@ -2,15 +2,15 @@ import React from "react";
 import { View, Text } from "react-native";
 import { styled } from "styled-components";
 
-function Option() {
+function DarkMode() {
   return (
     <View>
-      <StyleText>Option Page</StyleText>
+      <StyleText>DarkMode</StyleText>
     </View>
   );
 }
 
-export default Option;
+export default DarkMode;
 
 const StyleText = styled.Text`
   margin: auto;

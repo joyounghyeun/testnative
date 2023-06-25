@@ -6,8 +6,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import Chat from "./components/Chat";
 import Friend from "./components/Friend";
-import Option from "./components/Option";
 import Main from "./components/Main";
+import DarkMode from "./components/DarkMode";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,7 +25,7 @@ function App() {
               iconName = focused ? "chatbubble" : "chatbubble-outline";
             } else if (route.name === "Friend") {
               iconName = focused ? "search" : "search-outline";
-            } else if (route.name === "Option") {
+            } else if (route.name === "DarkMode") {
               iconName = focused
                 ? "ellipsis-horizontal"
                 : "ellipsis-horizontal-outline";
@@ -47,7 +47,7 @@ function App() {
         />
         <Tab.Screen name="Chat" component={Chat} />
         <Tab.Screen name="Friend" component={Friend} />
-        <Tab.Screen name="Option" component={Option} />
+        <Tab.Screen name="DarkMode" component={DarkMode} />
       </Tab.Navigator>
     </NavigationContainer>
   );
